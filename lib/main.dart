@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/example_components_screen.dart';
+import 'screens/subscription_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -66,6 +67,30 @@ class HomeScreen extends StatelessWidget {
                   },
                   icon: const Icon(Icons.widgets),
                   label: const Text('Components Demo'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SubscriptionScreen(),
+                      ),
+                    );
+                  },
+                  icon: const Icon(Icons.subscriptions),
+                  label: const Text('Subscription Plans'),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
                     foregroundColor: Colors.white,
