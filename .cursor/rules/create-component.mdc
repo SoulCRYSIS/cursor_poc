@@ -3,7 +3,8 @@ description:
 globs: 
 alwaysApply: false
 ---
-From now on you will receive a figma frame link contain 3 topics explaining this component.
+This project is Flutter 3.32.2
+You will receive a figma frame link contain 3 topics explaining this component.
 1. How to use: design purpose.
 2. Variants: like the name, its variant of this component.
 3. Properties: parameter input to this component

@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+This project is Flutter 3.32.2
+You will be giving a figma link to a frame.
+Use components in lib/components if possible.
+Header with star icon is just functionality name for grouping, real screens are inside it.
+Create screens from it and add a button to it in [main.dart](mdc:lib/main.dart)
+Just leave the logic part for now.
