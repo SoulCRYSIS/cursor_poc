@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+From now on you will receive a figma frame link contain 3 topics explaining this component.
+1. How to use: design purpose.
+2. Variants: like the name, its variant of this component.
+3. Properties: parameter input to this component
+Don't create example page, just create component in components folder then add a single sample widget to [example_components_screen.dart](mdc:lib/screens/example_components_screen.dart).
