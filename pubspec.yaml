@@ -1,6 +1,6 @@
 name: cursor_poc
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   mocktail: ^1.0.4
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:

@@ -1,3 +1,4 @@
+import 'package:cursor_poc/services/subscription_service.dart';
 import 'package:flutter/material.dart';
 import 'screens/example_components_screen.dart';
 import 'screens/subscription_plans_screen.dart';
@@ -116,6 +117,31 @@ class HomeScreen extends StatelessWidget {
                   },
                   icon: const Icon(Icons.login),
                   label: const Text('Login Screen'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton.icon(
+                  onPressed: () async {
+                    try {
+                      final subscriptions =
+                          await SubscriptionService.getAllSubscriptions();
+                      print(subscriptions);
+                    } catch (e) {
+                      print(e);
+                    }
+                  },
+                  icon: const Icon(Icons.login),
+                  label: const Text('Fetch Subscriptions'),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
                     foregroundColor: Colors.white,
