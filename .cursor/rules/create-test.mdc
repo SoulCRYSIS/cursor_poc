@@ -1,0 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+This project is Flutter 3.32.2
+You will be giving a widget or screen file.
+Write unit tests using Mocktail.
+Make it highest test coverage as possible.

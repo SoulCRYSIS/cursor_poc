@@ -4,8 +4,7 @@ globs:
 alwaysApply: false
 ---
 This project is Flutter 3.32.2
-You will be giving a figma link to a frame.
-Use components in lib/components if possible.
+You will be giving a figma link to a screen frame.
 I want it to be exactly like in the figma including pixel perfect.
-Create a screen from it and add a button to it in [main.dart](mdc:lib/main.dart)
+Use components in lib/components to create a screen and add a button navigate to it in [main.dart](mdc:lib/main.dart)
 Just leave the call API part for now.
